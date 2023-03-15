@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title>Inventory</title>
+    </head>
+
+    <body>
+        <form action="">
+            <table border="1" height="500" width="500">
+                <tr height="100">
+                    <td colspan="4">
+                        <center><h1>Inventory</h1></center>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Product Serial</b>
+                    </td>
+                    <td>
+                        <b>Product Name</b>
+                    </td>
+                    <td>
+                        <b>
+                            Quantity
+                        </b>
+                    </td>
+                    <td>
+                        <b>Price per Unit</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        000001
+                    </td>
+                    <td>
+                        Burger                        
+                    </td>
+                    <td>
+                        10000
+                    </td>
+                    <td>
+                        100
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        000002
+                    </td>
+                    <td>
+                        Pizza
+                    </td>
+                    <td>
+                        1000
+                    </td>
+                    <td>
+                        170
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        000003
+                    </td>
+                    <td>
+                        Chicken Fry
+                    </td>
+                    <td>
+                        200
+                    </td>
+                    <td>
+                        70
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        000004
+                    </td>
+                    <td>
+                        Swarma
+                    </td>
+                    <td>
+                        170
+                    </td>
+                    <td>
+                        50
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        000005
+                    </td>
+                    <td>
+                        Pasta
+                    </td>
+                    <td>
+                        300
+                    </td>
+                    <td>
+                        400
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
