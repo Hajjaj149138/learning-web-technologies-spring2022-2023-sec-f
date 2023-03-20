@@ -1,0 +1,11 @@
+Restaurant: KachiVai
+Item Name: Basmati Kachi
+Rating: 3
+Review: Need to be improved the quality of the mutton!!!
+
+
+Restaurant: Sultan's Dine
+Item Name: Borhani
+Rating: 3
+Review: Not good in quality!!!
+

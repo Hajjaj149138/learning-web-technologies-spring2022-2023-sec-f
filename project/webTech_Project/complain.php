@@ -5,16 +5,16 @@
     <body>
         <fieldset>
             <legend>Complain</legend>
-            <form action="submit.php" method="POST">
+            <form method="post" action="complain1.php">
                 <label for="name">Name     :</label>
-                <input type="text" id="name" name="name" required><br><br>
+                <input type="text" name="name" placeholder="Name"><br>
                 <label for="email">Email      :</label>
-                <input type="email" id="email" name="email" required><br><br>
-                <label for="order">Order Number:</label>
-                <input type="text" id="order" name="order" required><br><br>
+                <input type="email" name="email" placeholder="Email"><br>
+                <label for="order">Subject:</label>
+                <input type="text" name="subject" placeholder="Subject"><br>
                 <label for="complain">Complain:</label><br>
-                <textarea id="complain" name="complain" rows="5" required></textarea>
-                <br> <input type="submit" value="Submit">
+                <textarea name="message" placeholder="Message"></textarea><br>
+                <br> <input type="submit" name="submit" value="Submit">
             </form>
         </fieldset>
     </body>
