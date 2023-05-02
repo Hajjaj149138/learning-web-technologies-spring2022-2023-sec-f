@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>Add Financial Report</title>
+    <link rel="stylesheet" href="add_report.css">
+    <script>
+        function validateForm() {
+            const month = document.addReportForm.month;
+            const expenses = document.addReportForm.expenses;
+            const profits_losses = document.addReportForm.profits_losses;
+
+            if (month.value.trim() === "") {
+                alert("Please enter a month.");
+                month.focus();
+                return false;
+            }
+
+            if (isNaN(parseFloat(expenses.value)) || expenses.value < 0) {
+                alert("Please enter valid expenses.");
+                expenses.focus();
+                return false;
+            }
+
+            if (isNaN(parseFloat(profits_losses.value))) {
+                alert("Please enter valid profits/losses.");
+                profits_losses.focus();
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <h1>Add Financial Report</h1>
+    <form name="addReportForm" action="../../controllers/add_report_controller.php" method="POST" onsubmit="return validateForm();">
+        <label for="month">Month:</label>
+        <input type="text" name="month" id="month"><br>
+        <label for="expenses">Expenses:</label>
+        <input type="number" step="0.01" name="expenses" id="expenses"><br>
+        <label for="profits_losses">Profits/Losses:</label>
+        <input type="number" step="0.01" name="profits_losses" id="profits_losses"><br>
+        <button type="submit">Submit</button>
+    </form>
+    <a href="show_reports.php">View all reports</a>
+    | <a href="../admindashboard.php">Dashboard</a>
+    | <a href="../vendorashboard.php">Dashboard</a>
+</body>
+</html>

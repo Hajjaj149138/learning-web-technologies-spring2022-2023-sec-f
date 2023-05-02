@@ -1,0 +1,72 @@
+
+body {
+    background-color: Ivory;
+    color: DarkSlateGray;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+fieldset {
+border: 2px solid DarkSlateGray;
+margin: 20px;
+padding: 20px;
+}
+
+h1 {
+color: DarkSlateGray;
+font-size: 36px;
+font-weight: bold;
+text-align: center;
+text-shadow: 2px 2px LightGray;
+text-transform: uppercase;
+}
+
+h2 {
+color: DarkSlateGray;
+font-size: 24px;
+font-weight: bold;
+margin-top: 20px;
+margin-bottom: 10px;
+text-transform: uppercase;
+}
+
+hr {
+border: none;
+border-top: 1px solid DarkSlateGray;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+p {
+color: DarkSlateGray;
+font-size: 18px;
+line-height: 1.5;
+margin: 10px 0;
+}
+
+a {
+color: dark;
+font-weight: bold;
+text-decoration: none;
+}
+
+a:hover {
+color: red;
+}
+
+button {
+background-color: LightGray;
+border: none;
+color: DarkSlateGray;
+cursor: pointer;
+font-size: 18px;
+font-weight: bold;
+margin-top: 20px;
+padding: 10px 20px;
+text-transform: uppercase;
+}
+
+button:hover {
+background-color: red;
+color: Ivory;
+}

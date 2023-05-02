@@ -1,0 +1,67 @@
+<html>
+<head>
+    <title>Add Product</title>
+    <link rel="stylesheet" href="add_product.css">
+    <script>
+        function validateForm() {
+            const productSerial = document.addProductForm.product_serial;
+            const productName = document.addProductForm.product_name;
+            const quantity = document.addProductForm.quantity;
+            const pricePerUnit = document.addProductForm.price_per_unit;
+
+            if (productSerial.value.trim() === "") {
+                alert("Product Serial must be filled out");
+                productSerial.focus();
+                return false;
+            }
+
+            if (productName.value.trim() === "") {
+                alert("Product Name must be filled out");
+                productName.focus();
+                return false;
+            }
+
+            if (quantity.value.trim() === "") {
+                alert("Quantity must be filled out");
+                quantity.focus();
+                return false;
+            }
+
+            if (pricePerUnit.value.trim() === "") {
+                alert("Price per Unit must be filled out");
+                pricePerUnit.focus();
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Add Product</h1>
+        <form name="addProductForm" action="../../controllers/add_product_controller.php" method="POST" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="product_serial">Product Serial:</label>
+                <input type="text" name="product_serial" id="product_serial">
+            </div>
+            <div class="form-group">
+                <label for="product_name">Product Name:</label>
+                <input type="text" name="product_name" id="product_name">
+            </div>
+            <div class="form-group">
+                <label for="quantity">Quantity:</label>
+                <input type="number" name="quantity" id="quantity">
+            </div>
+            <div class="form-group">
+                <label for="price_per_unit">Price per Unit:</label>
+                <input type="number" step="0.01" name="price_per_unit" id="price_per_unit">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <a href="show_inventory.php">View Inventory</a>
+        | <a href="../admindashboard.php">Dashboard</a>
+        | <a href="../vendorashboard.php">Dashboard</a>
+    </div>
+</body>
+</html>
